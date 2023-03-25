@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateCertificate">
+
+    <RelativeLayout
+        android:id="@+id/llPdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivCertificate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:src="@drawable/certificate" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_195sdp"
+            android:fontFamily="@font/greatvibes_regular"
+            android:gravity="center"
+            android:text="Mohamed Mahmoud abd Elhamed"
+            android:textColor="@color/certificate"
+            android:textSize="@dimen/_8ssp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_265sdp"
+            android:fontFamily="@font/alice_regular"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/certificate"
+            android:textSize="@dimen/_6ssp" />
+
+        <TextView
+            android:id="@+id/certificate_ID"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_225sdp"
+            android:layout_marginTop="@dimen/_265sdp"
+            android:fontFamily="@font/alice_regular"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/certificate"
+            android:textSize="@dimen/_6ssp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save as PDF"
+        android:fontFamily="@font/almarai_bold"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@id/btn_change_input"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:id="@+id/btn"/>
+
+
+    <Button
+        android:id="@+id/btn_change_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/almarai_bold"
+        android:textColor="@color/white"
+        android:text="Change Input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

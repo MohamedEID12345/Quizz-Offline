@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:background="@drawable/main_backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context=".QuizActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtScor"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Score: "-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/_14ssp"-->
+<!--            android:textStyle="bold" />-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkOrange"
+            app:cardCornerRadius="@dimen/_18sdp"
+            app:contentPadding="@dimen/_3sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:srcCompat="@drawable/exam" />
+
+                <TextView
+                    android:id="@+id/txtScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="00.0"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtTotalQu"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/_152sdp"-->
+<!--            android:gravity="end"-->
+<!--            android:text="Question: "-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/_14ssp"-->
+<!--            android:textStyle="bold" />-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkOrange"
+            android:layout_marginLeft="@dimen/_162sdp"
+            app:cardCornerRadius="@dimen/_18sdp"
+            app:contentPadding="@dimen/_3sdp"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:srcCompat="@drawable/question" />
+        <TextView
+            android:id="@+id/txtTotalQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2/10"
+            android:gravity="center"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtCor"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Correct: "-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/_14ssp"-->
+<!--            android:textStyle="bold" />-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkOrange"
+            app:cardCornerRadius="@dimen/_18sdp"
+            app:contentPadding="@dimen/_3sdp"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:srcCompat="@drawable/accept" />
+        <TextView
+            android:id="@+id/txtCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="6"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkOrange"
+            android:layout_marginLeft="@dimen/_162sdp"
+            app:cardCornerRadius="@dimen/_18sdp"
+            app:contentPadding="@dimen/_3sdp"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:srcCompat="@drawable/delete" />
+<!--        <TextView-->
+<!--            android:id="@+id/txtWr"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/_152sdp"-->
+<!--            android:gravity="end"-->
+<!--            android:text="Wrong: "-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/_14ssp"-->
+<!--            android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/txtWrong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:gravity="center"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/clock">
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/_22sdp"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="Which of the following is not a computer language?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:fontFamily="@font/almarai_bold"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_40sdp">
+
+
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/default_button_bg"
+            android:onClick="buttonA"
+            android:padding="@dimen/_5sdp"
+            android:text="Design"
+            android:fontFamily="@font/almarai_bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/default_button_bg"
+            android:onClick="buttonB"
+            android:padding="@dimen/_10sdp"
+            android:text="Design"
+            android:fontFamily="@font/almarai_bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/default_button_bg"
+            android:onClick="buttonC"
+            android:padding="@dimen/_5sdp"
+            android:text="Design"
+            android:fontFamily="@font/almarai_bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/buttonD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/default_button_bg"
+            android:onClick="buttonD"
+            android:padding="@dimen/_5sdp"
+            android:text="Design"
+            android:fontFamily="@font/almarai_bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

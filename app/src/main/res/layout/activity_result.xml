@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/congratlution" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تــهـــانـيـنـا"
+            android:gravity="center"
+            android:fontFamily="@font/almarai_extrabold"
+            android:textSize="@dimen/_30ssp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="لقد أنهيت الإختبار بنجاح"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/almarai_regular"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_72sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="@dimen/_18sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/all" />
+
+                <TextView
+                    android:id="@+id/txtTotalQuestionsR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/almarai_extrabold"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="@color/darkOrange"
+                    android:textSize="@dimen/_16ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:text="إجمالي الأسئلة :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                app:cardCornerRadius="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:backgroundTint="@color/white"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cross" />
+
+                    <TextView
+                        android:id="@+id/txtWrongR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_16ssp"
+                        android:gravity="center"
+                        android:fontFamily="@font/almarai_extrabold"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="خطأ:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp"
+                        android:gravity="center"
+                        android:fontFamily="@font/almarai_bold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                app:cardCornerRadius="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:backgroundTint="@color/white"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/check" />
+
+                    <TextView
+                        android:id="@+id/txtCorrectR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        android:textColor="@color/colorTrueAnswer"
+                        android:textSize="@dimen/_16ssp"
+                        android:gravity="center"
+                        android:fontFamily="@font/almarai_extrabold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="صحيحة:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp"
+                        android:gravity="center"
+                        android:fontFamily="@font/almarai_bold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_72sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="@dimen/_18sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/highscore" />
+
+                <TextView
+                    android:id="@+id/txtScoreR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/almarai_extrabold"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="@color/darkOrange"
+                    android:textSize="@dimen/_16ssp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/almarai_extrabold"
+                    android:gravity="center"
+                    android:text="%"
+                    android:textColor="@color/darkOrange"
+                    android:textSize="@dimen/_16ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:text="نسبة النجاح:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_bg"
+            android:padding="@dimen/_10sdp"
+            android:text="أحصل على شهادة"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_20ssp"
+            android:fontFamily="@font/almarai_extrabold"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_PlayAgainR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_bg"
+            android:padding="@dimen/_10sdp"
+            android:text="إبدء من جديد"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_20ssp"
+            android:fontFamily="@font/almarai_extrabold"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

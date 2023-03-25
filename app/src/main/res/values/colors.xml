@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkOrange">#f6921e</color>
+    <color name="lightCyan">#b9e5fb</color>
+    <color name="colorAccent">#476562</color>
+    <color name="darkCyan">#00adee</color>
+    <color name="lightOrange">#f6ce8d</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#F44336</color>
+
+    <color name="colorTrueAnswer">#66bb6a</color>
+    <color name="colorFalseAnswer">#ef5350</color>
+
+    <color name="certificate">#8a6b45</color>
+
+</resources>
